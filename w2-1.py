@@ -1,0 +1,10 @@
+f1 = open(r'src.txt', 'w')
+f1.write('How many seas must a white dove sail\nBefore she sleeps in the sand')
+f1.close()
+f1 = open(r'src.txt', 'r')
+line = f1.readlines();
+f1.close()
+f2 = open(r'dest.txt', 'w')
+f2.write('How many roads must a man walk down\nBefore they call him a man\n')
+f2.writelines(line)
+f2.close()
